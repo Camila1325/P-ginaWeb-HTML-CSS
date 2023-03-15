@@ -13,7 +13,7 @@ body{
 }
 
 p{
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .container{
@@ -23,13 +23,19 @@ p{
 }
 
 .header{
-    background: linear-gradient(
-        180deg, rgba(125,107,107) 100%,
-        rgba(249,244,255) 20%,
-        rgba(125,107,107) 100%);     
-    min-height: 30vh;
+    background: rgb(125,107,107);
+    min-height: 50vh;
     display: flex;
     align-items: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .menu{
@@ -83,14 +89,8 @@ p{
     display: none;
 }
 
-p{
-    font-size: 18px;
-    color: black;
-    margin-bottom: 35px;
-}
-
 .books{
-   background: #f2f2f2;
+   background: #ffffff;
 }
 
 .galeria-books{
@@ -137,31 +137,39 @@ p{
     margin-top: 70%;
 }
 
+
 .hover-galeria p{
     color: #ffffff;
-    margin-left: 10px;
-
+    font-size: 36px;
+    text-align: center;
 }
+
 
 .book-port:hover .hover-galeria{
     transform: scale(1);
 }
 
 .about-us{
-    padding: 100px 0;
     background-color: #E8E8E8;
-    font-size: 35px;
+    font-size: 50px;
     color: #E59A1E;
-    margin-bottom: 15px;
+    margin: 10px 10px 10px 10px; 
 }
 
 .about-content{
-    display: flex;
+    display: flexbox;
     position: relative;
+    margin: 10px;
 }
 
 .about-us{
     position: relative;
+}
+
+.about-text p{
+        font-size: 18px;
+        color: black;
+        margin-bottom: 35px;
 }
 
 .form{
@@ -169,10 +177,9 @@ p{
 }
 
 .form, .name, .email{
-    padding: 17px 35px;
-    background-color: #F7F7F7;
+    padding: 15px 90px;
+    background-color: #ffffff;
     border-radius: 25px;
-    margin-right: 15px;
     border: 1p solid #E8E8E8;
     outline: none;
     color: #3F3F3F;
@@ -183,23 +190,71 @@ p{
 }
 
 .btn{
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
     display: inline-block;
-    padding: 13px 45px;
-    font-size: 18px;
+    padding: 15px 45px;
+    font-size: 25px;
     background-color: #572116;
     color: #FFFF;
     border-radius: 25px;
     border: 0;
-    font-family: 'Bebas Neue', cursive;
+    font-family: serif;
     cursor: pointer;
 }
 
-.btn2:hover{
+.btn:hover{
     background-color: #E59A1E;
 }
 
 .form-content{
     padding: 100px 0 70px 0;
     text-align: center;
+}
+
+.wave2{
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.wave3{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.footer{
+    padding: 50px 0 0 0;
+    background: rgb(125,107,107);   
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.link-img img{
+    width: 120px; 
+}
+
+.socials2 img{
+    width: 50px;
+    margin: 5px;
+}
+
+.link h3{
+    font-size: 44px;
+    color: #ffffff;
+}
+
+.link a {
+    font-size: 22px;
+    display: block;
+    color: #ffff;
+    margin-bottom: 20px;
+}
+
+.link a:hover{
+    color: #E59A1E;
 }
